@@ -32,20 +32,9 @@ order managment system using Nest, PostgreSql and Prisma
 $ npm install
 ```
 
-## Running the app
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Download docker imager
+## Download docker image for postgres
 
 ```bash
 # run
@@ -54,4 +43,21 @@ $ docker compose up
 # close
 $ docker compose down
 ```
+### Add your env file and its variables
+```bash
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+```
+### Run your DB migration and seeds
+```bash
+# Migrations
+$ npx prisma migrate dev
 
+# seeding
+$ npx prisma db seed
+```
+
+## Running the app
+
+```bash
+$ npm run start:dev
+```
