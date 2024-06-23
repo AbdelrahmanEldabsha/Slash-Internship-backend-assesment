@@ -45,4 +45,13 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-Nest is [MIT licensed](LICENSE).
+## Download docker imager
+
+```bash
+# run
+$ docker compose up
+
+# close
+$ docker compose down
+```
+
